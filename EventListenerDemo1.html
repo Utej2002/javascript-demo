@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Demo1</title>
+    <style>
+            .wrapper{
+  position: relative;
+  top: 40vh;
+}
+#button{
+  border: 5px solid #FFAB33;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  margin: auto;
+  background: #FF5733;
+}
+
+#button:hover{
+  background: #DFF30B;
+}
+
+#message{
+  font-size: 26px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.reveal{
+  visibility: visible;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div id="message" class="hide">
+          You won't see this message until after you clicked the button. Click again to hide me!
+        </div>
+        <div id="button">
+          Click me!
+        </div>
+      </div>
+
+      <script>
+        //query selector method can work with any CSS selector to access HTML element 
+        // it is more flexiblethan get elementById
+        let button = document.querySelector('#button');
+        let msg = document.querySelector('#message');
+
+        button.addEventListener('click', ()=>{
+        msg.classList.toggle('reveal');
+})
+    </script>
+</body>
+</html>

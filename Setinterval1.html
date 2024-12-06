@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Timeouts Set Interval</title>
+</head>
+<body>
+    <h1>Set Interval Demo</h1>
+    <script>
+        //set interval function
+        var a=setInterval(function(){alert("hello")},3000);
+
+        function stopInterval(){
+            clearInterval(a);//clearinterval
+      }
+    </script>
+    <button type="button"onclick="stopInterval()">StopInterval</button>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <h1>Factorial Using For Loop</h1>
+    <hr>
+    <script>
+        var fact=1;
+
+        var num=parseInt(prompt("Enter a Number :"));
+        for(i=1;i<=num;i++){
+            fact=fact*i
+        }
+        //Different way to display js values
+        //Template Literals-Embed variables in string
+        document.write(`The factorial of ${num} is`+fact);
+        document.write("<br>The factorial of "+num+" is"+fact);
+        </script>
+    
+</body>
+</html>

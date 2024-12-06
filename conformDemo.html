@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conform-BOM</title>
+</head>
+<body>
+    <h1>Confirm, location,history - BOM Objects Demo</h1>
+    <p>Click the button to display a confirm box.</p>
+    
+    <button onclick="myFunction()">Try it</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+        var x;
+        if (confirm("Click Ok to visit COforge Web Site!") == true) {
+            x = "You pressed OK!";
+            window.location.assign("https://www.coforge.com/");
+        } else {
+            x = "You pressed Cancel!";
+            history.back();
+        }
+        document.getElementById("demo").innerHTML = x;
+       
+    }
+    </script>
+    
+</body>
+</html>
